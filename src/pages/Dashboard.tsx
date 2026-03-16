@@ -4,12 +4,17 @@ import PageContainer from '../components/layout/PageContainer'
 import Card from '../components/ui/Card'
 import Button from '../components/ui/Button'
 import DifficultyBadge from '../components/shared/DifficultyBadge'
+import FastExercise from '../components/dashboard/FastExercise'
+import HintsFeed from '../components/dashboard/HintsFeed'
 import { useExerciseStore } from '../store/exerciseStore'
 
 export default function Dashboard() {
   const { exercises, completedExerciseIds } = useExerciseStore()
   const featuredExercises = exercises.slice(0, 3)
   const recentCompleted = completedExerciseIds.slice(-3).reverse()
+  // Select a random quick exercise (aim for fast, beginner-friendly)
+  const quickExercises = exercises.filter((e) => e.durationMinutes <= 5)
+  const quickExercise = quickExercises[Math.floor(Math.random() * quickExercises.length)] || exercises[0]
 
   return (
     <PageContainer>
@@ -95,6 +100,17 @@ export default function Dashboard() {
           </Card>
         </div>
       )}
+
+      {/* Quick Exercise of the Day */}
+      <div className="mb-12">
+        <h2 className="text-2xl font-bold text-text-primary mb-6">⚡ 5-Minute Quick Exercise</h2>
+        <FastExercise exercise={quickExercise} />
+      </div>
+
+      {/* Daily Tips & Hints Feed */}
+      <div className="mb-12">
+        <HintsFeed exercises={exercises} />
+      </div>
 
       {/* Stats */}
       <div className="grid md:grid-cols-3 gap-6">
