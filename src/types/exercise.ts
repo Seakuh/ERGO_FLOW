@@ -1,4 +1,4 @@
-import { Difficulty, MuscleGroup, ExerciseCategory } from './common';
+import { Difficulty, MuscleGroup, ExerciseCategory, BodyPart, Location } from './common';
 
 export interface ExerciseSet {
   reps?: number;
@@ -34,5 +34,7 @@ export interface Exercise {
   thumbnailUrl?: string;
   tags: string[];
   relatedExerciseIds: string[];
+  location: Location[];      // Where you can do this (homeOffice, coffee, gym)
+  bodyPart: BodyPart[];       // What body part is trained
   createdAt: string;
 }

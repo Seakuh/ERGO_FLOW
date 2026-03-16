@@ -1,12 +1,14 @@
 import { create } from 'zustand';
 import { Exercise } from '../types/exercise';
-import { Difficulty, ExerciseCategory } from '../types/common';
+import { Difficulty, ExerciseCategory, Location, BodyPart } from '../types/common';
 import { exercises as allExercises } from '../data/exercises';
 
 interface ExerciseFilters {
   category: ExerciseCategory | 'all';
   difficulty: Difficulty | 'all';
   equipment: string | 'all';
+  location: Location | 'all';
+  bodyPart: BodyPart | 'all';
   search: string;
 }
 
@@ -25,6 +27,8 @@ const defaultFilters: ExerciseFilters = {
   category: 'all',
   difficulty: 'all',
   equipment: 'all',
+  location: 'all',
+  bodyPart: 'all',
   search: ''
 };
 

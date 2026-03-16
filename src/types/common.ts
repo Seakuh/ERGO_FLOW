@@ -6,8 +6,10 @@ export type MuscleGroup =
   | 'rhomboids'
   | 'serratus_anterior'
   | 'rear_deltoids'
+  | 'anterior_deltoids'
   | 'rotator_cuff'
   | 'deep_neck_flexors'
+  | 'neck_flexors'
   | 'thoracic_extensors'
   | 'pectorals'
   | 'levator_scapulae'
@@ -47,6 +49,23 @@ export const exerciseCategories: ExerciseCategory[] = [
   'breathing',
   'posture_reset',
 ];
+
+export type Location = 'homeOffice' | 'coffee' | 'gym' | 'anywhere';
+
+export type BodyPart =
+  | 'neck'
+  | 'shoulders'
+  | 'upperBack'
+  | 'midBack'
+  | 'lowerBack'
+  | 'chest'
+  | 'arms'
+  | 'forearms'
+  | 'wrists'
+  | 'core'
+  | 'hips'
+  | 'legs'
+  | 'fullBody';
 
 export type WikiCategory =
   | 'anatomy'

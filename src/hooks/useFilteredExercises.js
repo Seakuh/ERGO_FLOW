@@ -10,6 +10,10 @@ export function useFilteredExercises() {
                 return false;
             if (filters.equipment !== 'all' && !ex.equipment.includes(filters.equipment))
                 return false;
+            if (filters.location !== 'all' && !ex.location.includes(filters.location))
+                return false;
+            if (filters.bodyPart !== 'all' && !ex.bodyPart.includes(filters.bodyPart))
+                return false;
             if (filters.search) {
                 const q = filters.search.toLowerCase();
                 return (ex.name.toLowerCase().includes(q) ||

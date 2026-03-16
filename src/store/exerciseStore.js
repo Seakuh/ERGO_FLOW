@@ -4,6 +4,8 @@ const defaultFilters = {
     category: 'all',
     difficulty: 'all',
     equipment: 'all',
+    location: 'all',
+    bodyPart: 'all',
     search: ''
 };
 export const useExerciseStore = create((set) => ({

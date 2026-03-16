@@ -10,8 +10,10 @@ const muscleLabels: Record<MuscleGroup, string> = {
   rhomboids: 'Rhomboids',
   serratus_anterior: 'Serratus Anterior',
   rear_deltoids: 'Rear Deltoids',
+  anterior_deltoids: 'Front Deltoids',
   rotator_cuff: 'Rotator Cuff',
   deep_neck_flexors: 'Deep Neck Flexors',
+  neck_flexors: 'Neck Flexors',
   thoracic_extensors: 'Thoracic Extensors',
   pectorals: 'Pectorals',
   levator_scapulae: 'Levator Scapulae',
@@ -28,11 +30,11 @@ const muscleLabels: Record<MuscleGroup, string> = {
   erector_spinae: 'Erector Spinae',
   wrist_extensors: 'Wrist Extensors',
   wrist_flexors: 'Wrist Flexors',
-  deltoids: '',
-  biceps: '',
-  triceps: '',
-  forearms: '',
-  wrist: ''
+  deltoids: 'Deltoids',
+  biceps: 'Biceps',
+  triceps: 'Triceps',
+  forearms: 'Forearms',
+  wrist: 'Wrist'
 }
 
 export default function MuscleTag({ muscle }: MuscleTagProps) {
