@@ -19,6 +19,20 @@ const muscleLabels: Record<MuscleGroup, string> = {
   hip_flexors: 'Hip Flexors',
   glutes: 'Glutes',
   core: 'Core',
+  quadriceps: 'Quadriceps',
+  hamstrings: 'Hamstrings',
+  calves: 'Calves',
+  adductors: 'Adductors',
+  abductors: 'Abductors',
+  obliques: 'Obliques',
+  erector_spinae: 'Erector Spinae',
+  wrist_extensors: 'Wrist Extensors',
+  wrist_flexors: 'Wrist Flexors',
+  deltoids: '',
+  biceps: '',
+  triceps: '',
+  forearms: '',
+  wrist: ''
 }
 
 export default function MuscleTag({ muscle }: MuscleTagProps) {

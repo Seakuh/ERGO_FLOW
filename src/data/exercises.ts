@@ -316,5 +316,159 @@ export const exercises: Exercise[] = [
     tags: ['glutes', 'hips', 'lower back', 'no equipment', 'activation'],
     relatedExerciseIds: ['hip-flexor-stretch', 'cat-cow'],
     createdAt: '2024-01-01T00:00:00.000Z'
+  },
+  {
+    id: "push-up",
+    name: "Push-Up",
+    shortDescription: "Classic upper body bodyweight strength exercise.",
+    description: "The push-up is a foundational bodyweight movement that trains chest, shoulders and triceps while engaging the core for stability.",
+    category: "mobility",
+    difficulty: "beginner",
+    durationMinutes: 5,
+    muscles: {
+      primary: ["pectorals", "rear_deltoids", "triceps", "core"],
+      secondary: ["rear_deltoids", "rhomboids", "lower_trapezius"]
+    },
+    equipment: [],
+    sets: {
+      reps: 12,
+      sets: 3,
+      restSeconds: 60
+    },
+    cues: [
+      { order: 1, text: "Place hands slightly wider than shoulder width." },
+      { order: 2, text: "Keep body in a straight line from head to heels." },
+      { order: 3, text: "Lower chest under control." },
+      { order: 4, text: "Push back up without letting hips sag." }
+    ],
+    benefits: [
+      "Upper body strength",
+      "Core stability",
+      "Scalable difficulty"
+    ],
+    contraindications: [
+      "Shoulder impingement",
+      "Acute wrist pain"
+    ],
+    youtubeId: "zF0jbubK_jU",
+    tags: ["bodyweight", "upper-body", "strength"],
+    relatedExerciseIds: ["incline-push-up", "plank"],
+    createdAt: new Date().toISOString()
+  },
+  
+  {
+    id: "bodyweight-squat",
+    name: "Bodyweight Squat",
+    shortDescription: "Fundamental lower body exercise using body weight.",
+    description: "The bodyweight squat develops lower body strength, mobility and coordination.",
+    category: "strengthening",
+    difficulty: "beginner",
+    durationMinutes: 5,
+    muscles: {
+      primary: ["quadriceps", "glutes", "hip_flexors"],
+      secondary: ["hamstrings", "core"]
+    },
+    equipment: [],
+    sets: {
+      reps: 15,
+      sets: 3,
+      restSeconds: 60
+    },
+    cues: [
+      { order: 1, text: "Stand with feet shoulder-width apart." },
+      { order: 2, text: "Push hips back and bend knees." },
+      { order: 3, text: "Keep chest upright." },
+      { order: 4, text: "Drive through heels to stand up." }
+    ],
+    benefits: [
+      "Lower body strength",
+      "Improved mobility",
+      "Functional movement pattern"
+    ],
+    contraindications: [
+      "Acute knee injury",
+      "Severe hip pain"
+    ],
+    youtubeId: "P-yaD24bUE8",
+    tags: ["legs", "bodyweight", "strength"],
+    relatedExerciseIds: ["lunge", "wall-sit"],
+    createdAt: new Date().toISOString()
+  },
+  
+  {
+    id: "plank",
+    name: "Plank",
+    shortDescription: "Isometric core stability exercise.",
+    description: "The plank strengthens the core and improves posture by training the abdominal and spinal stabilizers.",
+    category: "balance",
+    difficulty: "beginner",
+    durationMinutes: 3,
+    muscles: {
+      primary: ["core"],
+      secondary: ["pectorals", "glutes"]
+    },
+    equipment: [],
+    sets: {
+      holdSeconds: 30,
+      sets: 3,
+      restSeconds: 30
+    },
+    cues: [
+      { order: 1, text: "Place forearms on the ground under shoulders." },
+      { order: 2, text: "Engage core and glutes." },
+      { order: 3, text: "Keep body in a straight line." },
+      { order: 4, text: "Avoid arching the lower back." }
+    ],
+    benefits: [
+      "Core stability",
+      "Improved posture",
+      "Low injury risk"
+    ],
+    contraindications: [
+      "Acute lower back injury"
+    ],
+    youtubeId: "pSHjTRCQxIw",
+    tags: ["core", "isometric", "stability"],
+    relatedExerciseIds: ["side-plank", "dead-bug"],
+    createdAt: new Date().toISOString()
+  },
+  
+  {
+    id: "reverse-lunge",
+    name: "Reverse Lunge",
+    shortDescription: "Single-leg strength exercise improving balance and leg strength.",
+    description: "Reverse lunges strengthen the legs and improve balance while placing less stress on the knees than forward lunges.",
+    category: "mobility",
+    difficulty: "beginner",
+    durationMinutes: 5,
+    muscles: {
+      primary: ["glutes", "hip_flexors"],
+      secondary: ["quadriceps", "core"]
+    },
+    equipment: [],
+    sets: {
+      reps: 10,
+      sets: 3,
+      restSeconds: 60
+    },
+    cues: [
+      { order: 1, text: "Stand tall and step one foot backward." },
+      { order: 2, text: "Lower until both knees reach roughly 90°." },
+      { order: 3, text: "Keep torso upright." },
+      { order: 4, text: "Push through the front heel to return." }
+    ],
+    benefits: [
+      "Improves balance",
+      "Strengthens legs",
+      "Corrects muscular imbalances"
+    ],
+    contraindications: [
+      "Acute knee injury",
+      "Severe balance impairment"
+    ],
+    youtubeId: "QOVaHwm-Q6U",
+    tags: ["hips", "balance", "unilateral"],
+    relatedExerciseIds: ["bodyweight-squat"],
+    createdAt: new Date().toISOString()
   }
 ];

@@ -11,15 +11,32 @@ export type MuscleGroup =
   | 'thoracic_extensors'
   | 'pectorals'
   | 'levator_scapulae'
+  | 'erector_spinae'
+  | 'wrist_extensors'
+  | 'wrist_flexors'
   | 'lats'
+  | 'deltoids'
+  | 'obliques'
   | 'hip_flexors'
   | 'glutes'
+  | 'quadriceps'
+  | 'hamstrings'
+  | 'calves'
+  | 'adductors'
+  | 'abductors'
+  | 'biceps'
+  | 'triceps'
+  | 'forearms'
+  | 'wrist'
   | 'core';
 
 export type ExerciseCategory =
   | 'mobility'
+  | 'balance'
+  | 'unilateral'
   | 'strengthening'
   | 'stretching'
+  | 'stability'
   | 'breathing'
   | 'posture_reset';
 
