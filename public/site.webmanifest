@@ -1,0 +1,13 @@
+{
+  "name": "ErgoFlow - Posture Training & Ergonomic Knowledge",
+  "short_name": "ErgoFlow",
+  "description": "Dein persönlicher Assistent für gesunde Haltung und Ergonomie – ideal für Remote-Arbeit, Homeoffice und Arbeiten im Café.",
+  "icons": [
+    {"src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png"}
+  ],
+  "theme_color": "#0ea5e9",
+  "background_color": "#0f172a",
+  "display": "standalone",
+  "start_url": "/"
+}

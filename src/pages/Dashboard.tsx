@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, TrendingUp } from 'lucide-react'
+import { ArrowRight, TrendingUp, Calendar, Target } from 'lucide-react'
 import PageContainer from '../components/layout/PageContainer'
 import Card from '../components/ui/Card'
 import Button from '../components/ui/Button'
 import DifficultyBadge from '../components/shared/DifficultyBadge'
 import FastExercise from '../components/dashboard/FastExercise'
 import HintsFeed from '../components/dashboard/HintsFeed'
+import DailyFlowGraph from '../components/dashboard/DailyFlowGraph'
+import ContributionCalendar from '../components/dashboard/ContributionCalendar'
 import { useExerciseStore } from '../store/exerciseStore'
 
 export default function Dashboard() {
@@ -113,7 +115,7 @@ export default function Dashboard() {
       </div>
 
       {/* Stats */}
-      <div className="grid md:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-3 gap-6 mb-12">
         <Card>
           <div className="text-center">
             <p className="text-3xl font-bold text-accent-primary">{exercises.length}</p>
@@ -131,6 +133,26 @@ export default function Dashboard() {
             <p className="text-3xl font-bold text-accent-primary">5</p>
             <p className="text-text-secondary text-sm mt-2">Wiki Articles</p>
           </div>
+        </Card>
+      </div>
+
+      {/* Daily Flow Section */}
+      <div className="mb-12">
+        <h2 className="text-2xl font-bold text-text-primary mb-6 flex items-center gap-2">
+          <Target className="w-6 h-6 text-accent-primary" />
+          Today's Flow
+        </h2>
+        <DailyFlowGraph />
+      </div>
+
+      {/* Contribution Calendar Section */}
+      <div>
+        <h2 className="text-2xl font-bold text-text-primary mb-6 flex items-center gap-2">
+          <Calendar className="w-6 h-6 text-accent-secondary" />
+          Your Progress
+        </h2>
+        <Card className="p-6">
+          <ContributionCalendar />
         </Card>
       </div>
     </PageContainer>
